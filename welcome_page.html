@@ -1,0 +1,147 @@
+<html>
+  <body>
+    <style>
+      .centerTitle {
+        margin: auto;
+        width: 50%;
+        border: 3px solid white;
+        padding: 10px;
+      }
+
+      .centerBody {
+        margin: auto;
+        width: 50%;
+        border: 3px solid white;
+        padding: 10px;
+      }
+
+      body {
+        background-image: url("http://127.0.0.1:4000/images/ktm.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .bgimg {
+        /* Background image */
+        background-image: url("/w3images/forestbridge.jpg");
+        /* Full-screen */
+        height: 100%;
+        /* Center the background image */
+        background-position: center;
+        /* Scale and zoom in the image */
+        background-size: cover;
+        /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+        position: relative;
+        /* Add a white text color to all elements inside the .bgimg container */
+        color: white;
+        /* Add a font */
+        font-family: "Courier New", Courier, monospace;
+        /* Set the font-size to 25 pixels */
+        font-size: 25px;
+      }
+
+      /* Position text in the top-left corner */
+      .topleft {
+        position: absolute;
+        top: 0;
+        left: 16px;
+      }
+
+      .topRight {
+        position: absolute;
+        top: 0;
+        right: 16px;
+      }
+
+      /* Position text in the bottom-left corner */
+      .bottomleft {
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+      }
+
+      .bottomCenterExplore {
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+        margin: auto;
+        width: 20%;
+        border: 3px solid white;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        background-color: #04aa6d; /* Green */
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px;
+      }
+
+      .topLoginbutton {
+        position: absolute;
+        top: 10;
+        right: 16px;
+        font-family: "Courier New", Courier, monospace;
+        border: 3px solid #04aa6d;
+        color: #04aa6d;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+
+      /* Position text in the middle */
+      .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      /* Style the <hr> element */
+      hr {
+        margin: auto;
+        width: 40%;
+      }
+    </style>
+
+    <div class="bgimg">
+      <div class="topleft">
+        <img src="http://127.0.0.1:4000/images/logo.png" alt="Mountain" height="50px">
+      </div>
+      <div class="middle">
+        <h1>Hello Users! Welcome to ktmApp.</h1>
+        <hr />
+        <p>Explore places of kathmandu and connect with your nearby guiders.</p>
+      </div>
+    </div>
+
+    <button class="bottomCenterExplore" onclick="navigateToNextPage()">
+      Explore Now >
+    </button>
+    <script>
+      function navigateToNextPage() {
+        window.location.href = "user/register";
+      }
+    </script>
+
+    <div class="topRight">
+  
+
+      <button class = "topLoginbutton" onclick="navigateToLogin()">Login</button>
+      <script>
+        function navigateToLogin() {
+          window.location.href = "/login";
+        }
+      </script>
+    </div>
+  </body>
+</html>

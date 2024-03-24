@@ -1,0 +1,130 @@
+<!-- <html>
+   <body>
+      <form action = "/register_users" method = "GET">
+         Full Name: <input type = "text" name = "name">  <br>
+         Address: <input type = "text" name = "address">  <br>
+         Mobile: <input type = "text" name = "mobile">  <br>
+         Profession: <input type = "text" name = "profession">  <br>
+         Hobbies: <input type = "text" name = "hobbies">  <br>
+         Email: <input type = "email" name = "email">  <br>
+         Create Password: <input type = "password" name = "password">  <br>
+         <input type = "submit" value = "Submit">
+      </form>
+   </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+   <div class="container" style="background-color:#f1f1f1">
+      <div> <h2>Register User</h2>
+      <span class="psw">  <a href="/">Dashboard</a></span>
+    </div>
+
+
+<form action="/register_users" method="get">
+  <div class="imgcontainer">
+   <img src="http://127.0.0.1:4000/images/logo.png" alt="Mountain">
+  </div>
+
+  <div class="container">
+    <label for="name"><b>Enter your name</b></label>
+    <input type="text" placeholder="Enter Email" name="name" required>
+
+    <label for="address"><b>Enter your address</b></label>
+    <input type="text" placeholder="Enter Addresss" name="address" required>
+
+    <label for="mobile"><b>Enter your mobile number</b></label>
+    <input type="text" placeholder="Enter mobile number" name="mobile" required>
+
+    <label for="profession"><b>Enter your profession</b></label>
+    <input type="text" placeholder="Enter your profession" name="profession" required>
+
+    <label for="hobbies"><b>Enter your hobbies</b></label>
+    <input type="text" placeholder="Enter your interest" name="hobbies" required>
+
+    <label for="email"><b>Enter your email</b></label>
+    <input type="text" placeholder="Enter your email" name="email" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+        
+    <button type="submit">Register</button>
+  
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw"> Already have account? <a href="/login">Login</a></span>
+  </div>
+</form>
+
+</body>
+</html>
